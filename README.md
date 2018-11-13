@@ -1,2 +1,4 @@
 # vigneshm
+```sh
 npx vigneshm
+```

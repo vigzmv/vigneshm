@@ -27,6 +27,7 @@ const actions = {
     opn('http://blog.vigneshm.com/');
   },
   Close() {
+    console.log('Bye');
     process.exit(1);
   },
 };
@@ -45,25 +46,28 @@ I like to work with startups on cool projects.
 I am Mentor, Speaker & A Hackathons Hacker.
 `);
 
-inquirer
-  .prompt([
-    {
-      type: 'list',
-      name: 'choice',
-      message: 'Explore more about me?',
-      choices: [
-        'GitHub',
-        'LinkedIn',
-        'Twitter',
-        'Codementor',
-        'Projects',
-        'Website',
-        'Blog',
-        'Close',
-      ],
-    },
-  ])
-  .then((answers) => {
-    actions[answers.choice]();
-    process.exit(1);
-  });
+function prompt() {
+  inquirer
+    .prompt([
+      {
+        type: 'list',
+        name: 'choice',
+        message: 'Explore more about me?',
+        choices: [
+          'GitHub',
+          'LinkedIn',
+          'Twitter',
+          'Codementor',
+          'Projects',
+          'Website',
+          'Blog',
+          'Close',
+        ],
+      },
+    ])
+    .then((answers) => {
+      actions[answers.choice]();
+      prompt();
+    });
+}
+prompt();
