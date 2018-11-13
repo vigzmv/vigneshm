@@ -25,5 +25,10 @@
   "homepage": "https://github.com/vigzmv/vigneshm#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cfonts": "^2.2.3",
+    "inquirer": "^6.2.0",
+    "opn": "^5.4.0"
   }
 }
