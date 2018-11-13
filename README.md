@@ -1,4 +1,4 @@
 # vigneshm
 ```sh
-npx vigneshm
+$ npx vigneshm
 ```
