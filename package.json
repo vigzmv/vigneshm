@@ -1,0 +1,29 @@
+{
+  "name": "vigneshm",
+  "version": "0.0.1",
+  "description": "npx vigneshm",
+  "main": "index.js",
+  "bin": {
+    "vigneshm": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigzmv/vigneshm.git"
+  },
+  "keywords": [
+    "vigneshm",
+    "vigzmv"
+  ],
+  "author": "Vignesh M <vigzmv@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigzmv/vigneshm/issues"
+  },
+  "homepage": "https://github.com/vigzmv/vigneshm#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
